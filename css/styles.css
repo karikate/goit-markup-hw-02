@@ -88,6 +88,9 @@ body {
   background: var(--btn-background-color);
   cursor: pointer;
 }
+.hero-btn:hover {
+  background: #188ce8;
+}
 
 .about-list-title {
   font-weight: 700;
