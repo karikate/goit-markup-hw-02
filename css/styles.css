@@ -7,13 +7,34 @@
   --footer-background: #2f303a;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+* *::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
 body {
   font-family: Roboto, serif;
   color: var(--title-color);
-}
-
-.list {
-  list-style: none;
 }
 
 .link,
@@ -21,6 +42,21 @@ body {
 .link:focus {
   text-decoration: none;
   color: var(--link-color);
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  outline: 1px solid blue;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header {
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
 }
 
 .header-link {
@@ -65,16 +101,23 @@ body {
   background: #2f303a;
 }
 
+.hero-content {
+  padding: 200px 230px 281px 230px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
+  max-width: 696px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .hero-btn {
+  display: block;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -87,9 +130,15 @@ body {
   color: var(--btn-text-color);
   background: var(--btn-background-color);
   cursor: pointer;
+  margin-top: 30px;
 }
+
 .hero-btn:hover {
   background: #188ce8;
+}
+
+.about {
+  padding: 94px auto;
 }
 
 .about-list-title {
@@ -99,6 +148,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: inherit;
+  margin-bottom: 10px;
 }
 
 .about-list-text {
@@ -116,9 +166,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: inherit;
+  margin-bottom: 50px;
 }
 .team {
   background: #f5f4fa;
+}
+.team-title {
+  padding: 94px auto;
+}
+
+.team-list-item {
+  margin-left: 30px;
+  margin-bottom: 94px;
 }
 .team-list-name {
   font-weight: 500;
